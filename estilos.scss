@@ -1,41 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 
 *{
     margin: 0%;
     padding: 0%;
 }
-
-body{ 
-    background-color:rgb(209, 218, 137) ;}
-
+body{
+    background-color: rgb(209, 218, 137);
+}
 a{
     color: bisque;
 }
-
 a:hover{
     color: darkseagreen;
 }
-
 .jumbotron{
-    background-color:rgb(209, 218, 137)
+    background-color: rgb(209, 218, 137);
+    margin-bottom: 0%;
 }
 .anim{
     background-color: darkseagreen;
 }
-
 h1{
-    font-size: 70px;
+    font-size: 80px;
+    font-family: 'Tapestry', cursive;
 }
+.header-logo{
+    height: 300px;
+  }
+main{
+    display: flex;
 
-.card{
-    background-color: darkseagreen;
+    .parrafo{
+        width: 800px;
+        margin-top: 40px;
+        margin-left: 40px;
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+            font-size: 30px;
+        }
+    }
+    .card{
+        background-color: darkseagreen;
+    }
+}
+    item { 
+        img {
+        position: absolute;
+        object-fit:cover;
+        width: 100%;
+        top: 0;
+        left: 0;
+        min-height: 572px;
+        background:rgba(0,0,0,0.7);
+        }
+    } 
+
+.robbitgj{
+    max-width: 100%;
+    max-height: 40%;
+}
+.carousel-inner img {
+    height: 500px;
+    margin: auto;
+  }
+footer{
+    background-color: rgb(38, 38, 38);
+    height: 50px;
+    width: max;
+    p{
+        color: antiquewhite;
+        text-align: center;
+        padding-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+    }
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: lighter;
 }
 .card-img-top{
     height: 300px;
     width: 300px;
 }
 .galeria{
-    height: 500px;
+    margin-top: 0%;
+    padding-top: 0%;
+    height: 600px;
     width: 100%;
     background-color: beige;
     color: antiquewhite;
@@ -46,392 +100,131 @@ h1{
     text-align: center;
 }
 h2{
-    font-size: larger;
+    font-size: xx-large;
     background-color: darkseagreen;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Tapestry', cursive;
 }
-
+.gal{
+    border: 2px solid darkgreen;
+    min-height: 250px;
+    width: 100%;
+    transition: all 0.7s;
+}
 .gal:hover{
     transform: scale(1.05);
     transition: all 0.7s;
 }
-
-//size?//
-$size1: 10px;
-$size2: 11px;
-$size3: 12px;
-$size4: 13px;
-$size5: 14px;
-$size6: 15px;
-$size7: 16px;
-$size8: 17px;
-
-//colores de borde//
-$bord1:red;
-$bord2: blue;
-$bord3: purple;
-$bord4: green;
-$bord5: black;
-$bord6: yellow;
-$bord7: brown;
-$bord8: pink;
-
-//mapa//
-
-$color1: (
-   10px: red,
-   11px: blue,
-   12px: purple,
-   13px: green,
-   14px: black,
-   15px: yellow,
-   16px: brown,
-   17px: pink,
-);
-
-@mixin flex-row-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.btn-dark {
-    @include flex-row-center;
-}
-
-
-
-    @each $size, $bord in $color1 {
-        .img-#{$bord} {
-            border: #{$size} solid $bord;
-            border-radius: #{$size}
-        }
-        .card-#{$bord}{
-            border: #{$size} solid #{$bord} {
-            min-height: 250px;
-            width: 100%;
-            transition: all 0.7s;
-            @include flex-row-center;
-        }
-    }
-}
-.img-red {
-  background-image: url(imgs/Robbit_Stock.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.img-blue {
-    @extend .img-red;
-  background-image: url(imgs/Untitled_Artwork1.png);
-}
-
-.img-purple {
-    @extend .img-red;
-  background-image: url(imgs/Untitled_Artwork16.png);
-}
-
-.img-green {
-    @extend .img-red;
-  background-image: url(imgs/Untitled_Artwork17.png);
-}
-
-.img-black {
-    @extend .img-red;
-  background-image: url(imgs/Untitled_Artwork18.png);
-}
-
-.img-yellow {
-    @extend .img-red;
-  background-image: url(imgs/Untitled_Artwork19.png);
-}
-
-.img-brown {
-    @extend .img-red;
-  background-image: url(imgs/Untitled_Artwork20.png);
-}
-
-.img-pink {
-    @extend .img-red;
-  background-image: url(imgs/Untitled_Artwork21.png);
-}
-
-@media only screen and (min-width: 480px) and (max-width: 599px) {
-  .galeria {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .intro {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    height: 350;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-  .intro {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-  .quien {
-    grid: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-  }
-  .desc {
-    -ms-grid-columns: 2/4;
-        grid-template-columns: 2/4;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-  }
-  .galeria {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-  .img-red {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-  }
-  .img-blue {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-  .img-purple {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-  }
-  .img-green {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-  }
-  .img-black {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-  }
-  .img-yellow {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-  }
-  .img-brown {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-  }
-  .img-pink {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2/4;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-  }
-}
-
-@media only screen and (min-width: 901px) {
-  .galeria {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: 250px 250px 250px;
-        grid-template-rows: 250px 250px 250px;
-    gap: 20px;
-  }
-}.img-bord1 {
+.img1{
     background-image: url(imgs/Robbit_Stock.png);
     background-size: cover;
     background-position: center;
-  }
-  
-  .img-bord2 {
-    @extend .img-bord1;
+}
+.img2{
     background-image: url(imgs/Untitled_Artwork1.png);
-  }
-  
-  .img-bord3 {
-    @extend .img-bord1;
+    background-size: cover;
+    background-position: center;
+}
+.img3{
     background-image: url(imgs/Untitled_Artwork16.png);
-  }
-  
-  .img-bord4 {
-    @extend .img-bord1;
+    background-size: cover;
+    background-position: center;
+}.img4{
     background-image: url(imgs/Untitled_Artwork17.png);
-  }
-  
-  .img-bord5 {
-    @extend .img-bord1;
+    background-size: cover;
+    background-position: center;
+}
+.img5{
     background-image: url(imgs/Untitled_Artwork18.png);
-  }
-  
-  .img-bord6 {
-    @extend .img-bord1;
+    background-size: cover;
+    background-position: center;
+}
+.img6{
     background-image: url(imgs/Untitled_Artwork19.png);
-  }
-  
-  .img-bord7 {
-    @extend .img-bord1;
+    background-size: cover;
+    background-position: center;
+}.img7{
     background-image: url(imgs/Untitled_Artwork20.png);
-  }
-  
-  .img-bord8 {
-    @extend .img-bord1;
+    background-size: cover;
+    background-position: center;
+}
+.img8{
     background-image: url(imgs/Untitled_Artwork21.png);
-  }
-  
-  @media only screen and (min-width: 480px) and (max-width: 599px) {
-    .galeria {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr;
-          grid-template-columns: 1fr 1fr;
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (min-width: 480px) and (max-width: 599px){
+    main{
+        display: inline;
     }
-    .intro {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr;
-          grid-template-columns: 1fr 1fr;
-      height: 350;
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-  }
-  
-  @media only screen and (min-width: 600px) and (max-width: 900px) {
-    .intro {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: (1fr)[3];
-          grid-template-columns: repeat(3, 1fr);
+    .intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 350;
     }
-    .quien {
-      grid: 1/2;
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 2;
-      grid-row: 1/3;
+}
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    main{
+        display: inline;
     }
-    .desc {
-      -ms-grid-columns: 2/4;
-          grid-template-columns: 2/4;
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 2;
-      grid-row: 1/3;
+    .intro{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
     }
-    .galeria {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: (1fr)[3];
-          grid-template-columns: repeat(3, 1fr);
+    .quien{
+        grid: 1/2;
+        grid-row: 1/3;
     }
-    .img-bord1 {
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 1;
-      grid-column: 1/2;
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 2;
-      grid-row: 1/3;
+    .desc{
+        grid-template-columns: 2/4;
+        grid-row: 1/3;
     }
-    .img-bord2 {
-      -ms-grid-column: 2;
-      -ms-grid-column-span: 1;
-      grid-column: 2/3;
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 1;
-      grid-row: 1/2;
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
-    .img-bord3 {
-      -ms-grid-column: 3;
-      -ms-grid-column-span: 1;
-      grid-column: 3/4;
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 2;
-      grid-row: 1/3;
+    .img1{
+        grid-column: 1/2;
+        grid-row: 1/3;
     }
-    .img-bord4 {
-      -ms-grid-column: 2;
-      -ms-grid-column-span: 1;
-      grid-column: 2/3;
-      -ms-grid-row: 2;
-      -ms-grid-row-span: 1;
-      grid-row: 2/3;
+    .img2{
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
-    .img-bord5 {
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 2;
-      grid-column: 1/3;
-      -ms-grid-row: 3;
-      -ms-grid-row-span: 1;
-      grid-row: 3/4;
+    .img3{
+        grid-column: 3/4;
+        grid-row: 1/3;
     }
-    .img-bord6 {
-      -ms-grid-column: 3;
-      -ms-grid-column-span: 1;
-      grid-column: 3/4;
-      -ms-grid-row: 3;
-      -ms-grid-row-span: 1;
-      grid-row: 3/4;
+    .img4{
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
-    .img-bord7 {
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 1;
-      grid-column: 1/2;
-      -ms-grid-row: 4;
-      -ms-grid-row-span: 1;
-      grid-row: 4/5;
+    .img5{
+        grid-column: 1/3;
+        grid-row: 3/4;
     }
-    .img-bord8 {
-      -ms-grid-column: 2;
-      -ms-grid-column-span: 2;
-      grid-column: 2/4;
-      -ms-grid-row: 4;
-      -ms-grid-row-span: 1;
-      grid-row: 4/5;
+    .img6{
+        grid-column: 3/4;
+        grid-row: 3/4;
     }
-  }
-  
-  @media only screen and (min-width: 901px) {
-    .galeria {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: (1fr)[4];
-          grid-template-columns: repeat(4, 1fr);
-      -ms-grid-rows: 250px 250px 250px;
-          grid-template-rows: 250px 250px 250px;
-      gap: 20px;
+    .img7{
+        grid-column: 1/2;
+        grid-row: 4/5;
     }
-  }
+    .img8{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+@media only screen and (min-width: 901px){
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px 250px 250px;
+    gap: 20px;
+}
+}
