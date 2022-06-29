@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 
+$Amarillo: #d8d091;
+
 *{
     margin: 0%;
     padding: 0%;
 }
 body{
-    background-color: rgb(209, 218, 137);
+    background-color: $Amarillo;
 }
 a{
     color: bisque;
@@ -15,11 +17,21 @@ a:hover{
     color: darkseagreen;
 }
 .jumbotron{
-    background-color: rgb(209, 218, 137);
+    background-color: $Amarillo;
     margin-bottom: 0%;
 }
 .anim{
     background-color: darkseagreen;
+    h1{
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    iframe{
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
 h1{
     font-size:  5vw;
@@ -57,15 +69,28 @@ main{
     } 
 
 .robbitgj{
-    max-width: 100%;
-    max-height: 40%;
+    max-width: 50%;
+    max-height: 50%;
+    position: fixed;
 }
 footer{
     background-color: rgb(38, 38, 38);
     height: 50px;
     width: max;
+    text-align: center;
+    
+    .yt{
+        height: 30px;
+        width: 30px;
+        align: center;
+    }
+    .fb{
+        height: 30px;
+        width: 30px;
+        box-align: center;
+    }
     p{
-        color: antiquewhite;
+        color: $Amarillo;
         text-align: center;
         padding-top: 10px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -147,15 +172,6 @@ h2{
     background-image: url(imgs/Untitled_Artwork21.png);
     background-size: cover;
     background-position: center;
-}
-.carousel1{
-    background-image: url(imgs/Untitled_Artwork18.png);
-}
-.carousel2{
-    background-image: url(imgs/Untitled_Artwork16.png);
-}
-.carousel3{
-    background-image: url(imgs/Untitled_Artwork21.png);
 }
 
 @media only screen and (min-width: 480px) and (max-width: 599px){
