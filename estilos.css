@@ -59,6 +59,11 @@ a:hover {
   margin-bottom: 5px;
 }
 
+.carousel {
+  width: 640px;
+  height: 360px;
+}
+
 h1 {
   text-align: center;
   font-size: 5vw;
@@ -94,6 +99,11 @@ main .parrafo p {
 
 main .card {
   background-color: darkseagreen;
+}
+
+.chiquio {
+  max-width: 100%;
+  height: auto;
 }
 
 .item img {
@@ -203,6 +213,10 @@ p {
   text-align: center;
 }
 
+.item img {
+  width: 100%;
+}
+
 h2 {
   font-size: xx-large;
   background-color: darkseagreen;
@@ -277,11 +291,6 @@ h2 {
   p {
     font-size: 3vw;
   }
-  #myCarousel.carousel img {
-    max-width: 300%;
-    width: 150%;
-    min-height: 300px;
-  }
 }
 
 main {
@@ -304,10 +313,6 @@ main {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-  #myCarousel.carousel img {
-    width: 100%;
-    height: auto;
-  }
   main {
     display: inline;
   }
