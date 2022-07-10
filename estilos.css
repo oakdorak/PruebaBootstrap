@@ -126,7 +126,8 @@ main .card {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: darkseagreen;
+  background-image: url(/imgs/zz.png);
+  opacity: 0.5;
 }
 
 .box {

@@ -84,10 +84,7 @@ main{
             font-weight: 200;
             font-size: 28px;
         }
-    }
-    .card{
-        background-color: darkseagreen;
-    }
+    
 }
 .fondo{
     background-image:url(/imgs/zz.png);
@@ -109,7 +106,8 @@ main{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: darkseagreen;
+    background-image: url(/imgs/zz.png);
+    opacity:0.5;
 } 
 .box {
         display: flex;
