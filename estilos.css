@@ -60,8 +60,13 @@ a:hover {
 }
 
 h1 {
+  text-align: center;
   font-size: 5vw;
   font-family: 'Tapestry', cursive;
+}
+
+.cabeza {
+  text-align: center;
 }
 
 .header-logo {
@@ -76,15 +81,15 @@ main {
 }
 
 main .parrafo {
-  width: 100%;
+  width: 80%;
   margin-top: 40px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 main .parrafo p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 main .card {
@@ -98,6 +103,38 @@ main .card {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
+}
+
+.cartas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: darkseagreen;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+fieldset {
+  text-align: center;
+  margin: 2em 0;
+  padding: 1em 2em;
+  background-color: darkseagreen;
+  border: solid 8px darkgreen;
+  border-radius: 20px;
+  width: 400px;
 }
 
 .robbitgj {
@@ -240,25 +277,37 @@ h2 {
   p {
     font-size: 3vw;
   }
-  main {
-    display: inline;
-  }
-  .galeria {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .galeria {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    height: 350;
+  #myCarousel.carousel img {
+    max-width: 300%;
+    width: 150%;
+    min-height: 300px;
   }
 }
 
+main {
+  display: inline;
+}
+
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 350;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+  #myCarousel.carousel img {
+    width: 100%;
+    height: auto;
+  }
   main {
     display: inline;
   }

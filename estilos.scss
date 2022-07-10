@@ -7,6 +7,7 @@ $Amarillo: #d8d091;
     margin: 0%;
     padding: 0%;
 }
+
 body{
     background-color: $Amarillo;
 }
@@ -53,9 +54,18 @@ a:hover{
         margin-bottom: 5px;
     }
 }
+.carousel {
+    width:640px;
+    height:360px;
+  }
 h1{
+    text-align: center;
     font-size:  5vw;
     font-family: 'Tapestry', cursive;
+}
+.cabeza{
+        text-align: center;
+
 }
 .header-logo{
     max-width: 30%;
@@ -65,13 +75,13 @@ main{
     display: flex;
 
     .parrafo{
-        width: 100%;
+        width: 80%;
         margin-top: 40px;
-        margin-left: 40px;
+        margin-left: 20px;
         p{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: 200;
-            font-size: 30px;
+            font-size: 28px;
         }
     }
     .card{
@@ -86,8 +96,27 @@ main{
         left: 0;
         background:rgba(0,0,0,0.7);
         }
-    } 
-
+    }
+.cartas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkseagreen;
+} 
+.box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+fieldset{
+    text-align: center;
+    margin: 2em 0;
+    padding: 1em 2em;
+    background-color: darkseagreen;
+    border: solid 8px darkgreen;
+    border-radius: 20px;
+    width: 400px;
+}
 .robbitgj{
     max-width: 50%;
     max-height: 50%;
@@ -143,6 +172,9 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
+.item img {
+    width:100%;
+  }
 h2{
     font-size: xx-large;
     background-color: darkseagreen;
@@ -203,6 +235,8 @@ h2{
         font-size:3vw;
     }
 
+        }
+
     main{
         display: inline;
     }
@@ -215,8 +249,11 @@ h2{
         grid-template-columns: 1fr 1fr;
         height: 350;
     }
-}
+
 @media only screen and (min-width: 600px) and (max-width: 900px){
+
+        }
+    
     main{
         display: inline;
     }
