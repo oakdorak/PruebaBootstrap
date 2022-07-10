@@ -10,6 +10,25 @@ $Amarillo: #d8d091;
 body{
     background-color: $Amarillo;
 }
+.youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 a{
     color: bisque;
 }
@@ -21,6 +40,7 @@ a:hover{
     margin-bottom: 0%;
 }
 .anim{
+    width: 100%;
     background-color: darkseagreen;
     h1{
         text-align: center;
@@ -45,7 +65,7 @@ main{
     display: flex;
 
     .parrafo{
-        width: 80%;
+        width: 100%;
         margin-top: 40px;
         margin-left: 40px;
         p{
@@ -113,7 +133,7 @@ p{
 .galeria{
     margin-top: 0%;
     padding-top: 0%;
-    height: 600px;
+    height: 100%;
     width: 100%;
     background-color: beige;
     color: rgb(28, 63, 39);
@@ -178,7 +198,7 @@ h2{
     background-position: center;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 599px){
+@media only screen and (min-width: 400px) and (max-width: 599px){
     p {
         font-size:3vw;
     }
@@ -190,7 +210,7 @@ h2{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .intro{
+    .galeria{
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 350;
@@ -200,7 +220,7 @@ h2{
     main{
         display: inline;
     }
-    .intro{
+    .galeria{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
     }
